@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik Dirt', cursive;
+    font-weight: 100;
+}
+
+body {
+    overflow: hidden;
+}
+
+div {
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    z-index: 100;
+}
+
+button img {
+    width: 50px;
+    height: 50px;
+}
+
+canvas {
+    background-color: #ececec;
+}
