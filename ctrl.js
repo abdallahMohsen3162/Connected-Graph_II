@@ -104,40 +104,9 @@ class Circle {
     }
 }
 let random_colors = [
-    '#FF6F61',
-    '#88B04B',
-    '#92A8D1',
-    '#34568B',
-    '#D65076',
-    '#DD4124',
-    '#5B5EA6',
-    '#E15D44',
-    '#C3447A',
-    '#fa4529',
-    '#98B4D4',
-    '#FF6F61',
-    '#88B04B',
-    '#92A8D1',
-    '#34568B',
-    '#D65076',
-    '#DD4124',
-    '#5B5EA6',
-    '#E15D44',
-    '#C3447A',
-    '#fa4529',
-    '#98B4D4',
     '#9100ba',
-    '#88B04B',
-    '#92A8D1',
-    '#34568B',
-    '#D65076',
-    '#DD4124',
-    '#5B5EA6',
-    '#E15D44',
-    '#C3447A',
-    '#fa4529',
-    '#98B4D4',
-    'black'
+    "black"
+
 ];
 let arr = [];
 let lines = [];
@@ -213,6 +182,10 @@ document.addEventListener("click", (event) => {
     let c = Math.floor(Math.random() * random_colors.length);
     arr.push(new Circle(event.x, event.y, 10, dx, 1, random_colors[c]));
 
+
+    let x = arr.length;
+    document.getElementById("vertices").innerText = `Edges: ${x}`;
+    document.getElementById("edges").innerText = `Vertices: ${x * (x - 1) / 2}`;
 });
 
 
