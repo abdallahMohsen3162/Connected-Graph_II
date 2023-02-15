@@ -26,3 +26,8 @@ button img {
 canvas {
     background-color: #ececec;
 }
+
+.infos {
+    position: relative;
+    font-size: x-large;
+}
