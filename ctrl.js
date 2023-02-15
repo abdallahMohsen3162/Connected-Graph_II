@@ -214,8 +214,8 @@ document.addEventListener("click", (event) => {
 
 
     let x = arr.length;
-    document.getElementById("vertices").innerText = `Edges: ${x}`;
-    document.getElementById("edges").innerText = `Vertices: ${x * (x - 1) / 2}`;
+    document.getElementById("vertices").innerText = `Vertices : ${x}`;
+    document.getElementById("edges").innerText = `Edges : ${x * (x - 1) / 2}`;
 });
 
 
